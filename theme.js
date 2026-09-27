@@ -1,5 +1,5 @@
 // Integrations — scoped stylesheet (JS template literal; keep backticks out).
-// Inherits the shell's design tokens: --bg --surface --surface2 --border
+// Inherits the shell's design tokens: --bg --surface --surface-2 --border
 // --text --muted --accent --accent-fg --green --danger --font.
 export const CSS = `
 .cx-root { position: relative; display: flex; flex-direction: column; height: 100%; width: 100%;
@@ -24,7 +24,7 @@ export const CSS = `
 .cx-back { flex: 0 0 auto; min-width: 40px; min-height: 40px; border: 0; border-radius: 10px;
   background: transparent; color: var(--muted); font-size: 19px; cursor: pointer;
   display: inline-flex; align-items: center; justify-content: center; }
-.cx-back:hover { color: var(--text); background: var(--surface2, var(--bg)); }
+.cx-back:hover { color: var(--text); background: var(--surface-2, var(--bg)); }
 .cx-brand-text { min-width: 0; line-height: 1.15; }
 .cx-title { margin: 0; font-size: 18px; font-weight: 700; letter-spacing: -0.015em;
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
@@ -65,7 +65,7 @@ export const CSS = `
 .cx-chevron { flex: 0 0 auto; color: var(--muted); font-size: 16px; }
 
 .cx-switch { flex: 0 0 auto; position: relative; width: 44px; height: 26px; border-radius: 13px;
-  border: 1px solid var(--border); background: var(--surface2, var(--bg)); cursor: pointer;
+  border: 1px solid var(--border); background: var(--surface-2, var(--bg)); cursor: pointer;
   transition: background .18s, border-color .18s; padding: 0; }
 .cx-switch span { position: absolute; top: 2px; left: 2px; width: 20px; height: 20px;
   border-radius: 50%; background: var(--muted); transition: transform .18s, background .18s; }
